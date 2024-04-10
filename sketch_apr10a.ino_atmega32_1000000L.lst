@@ -1,0 +1,554 @@
+
+C:\Users\ABDULL~1\AppData\Local\Temp\arduino_build_537292/sketch_apr10a.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__vector_1>
+   8:	0c 94 50 00 	jmp	0xa0	; 0xa0 <__vector_2>
+   c:	0c 94 3e 00 	jmp	0x7c	; 0x7c <__vector_3>
+  10:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  14:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  18:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  1c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__vector_7>
+  20:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  24:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  28:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  2c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  30:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  34:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  38:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  3c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  40:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  44:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  48:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  4c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  50:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+__trampolines_start():
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  60:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  66:	01 c0       	rjmp	.+2      	; 0x6a <.do_clear_bss_start>
+
+00000068 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  68:	1d 92       	st	X+, r1
+
+0000006a <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  6a:	a7 36       	cpi	r26, 0x67	; 103
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  6c:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  6e:	e1 f7       	brne	.-8      	; 0x68 <.do_clear_bss_loop>
+.do_clear_bss_start():
+  70:	0e 94 97 00 	call	0x12e	; 0x12e <main>
+  74:	0c 94 2d 01 	jmp	0x25a	; 0x25a <_exit>
+
+00000078 <__bad_interrupt>:
+__vector_12():
+  78:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000007c <__vector_3>:
+__vector_3():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:112
+  MCUCSR &=~ (1<<ISC2);
+  GICR |= (1<<INT2);
+}
+
+ISR(INT2_vect)
+{
+  7c:	1f 92       	push	r1
+  7e:	0f 92       	push	r0
+  80:	0f b6       	in	r0, 0x3f	; 63
+  82:	0f 92       	push	r0
+  84:	11 24       	eor	r1, r1
+  86:	8f 93       	push	r24
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:113
+  SREG |=(1<<7);
+  88:	8f b7       	in	r24, 0x3f	; 63
+  8a:	80 68       	ori	r24, 0x80	; 128
+  8c:	8f bf       	out	0x3f, r24	; 63
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:114
+  TCCR1B |= (1<<CS12) | (1<<CS10);
+  8e:	8e b5       	in	r24, 0x2e	; 46
+  90:	85 60       	ori	r24, 0x05	; 5
+  92:	8e bd       	out	0x2e, r24	; 46
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:115
+}
+  94:	8f 91       	pop	r24
+  96:	0f 90       	pop	r0
+  98:	0f be       	out	0x3f, r0	; 63
+  9a:	0f 90       	pop	r0
+  9c:	1f 90       	pop	r1
+  9e:	18 95       	reti
+
+000000a0 <__vector_2>:
+__vector_2():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:96
+  MCUCR |=(1<<ISC11) |(1<<ISC10); // int1 rising edge
+  GICR |= (1<<INT1);
+}
+
+ISR(INT1_vect)
+{
+  a0:	1f 92       	push	r1
+  a2:	0f 92       	push	r0
+  a4:	0f b6       	in	r0, 0x3f	; 63
+  a6:	0f 92       	push	r0
+  a8:	11 24       	eor	r1, r1
+  aa:	8f 93       	push	r24
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:97
+SREG|=(1<<7);
+  ac:	8f b7       	in	r24, 0x3f	; 63
+  ae:	80 68       	ori	r24, 0x80	; 128
+  b0:	8f bf       	out	0x3f, r24	; 63
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:98
+TCCR1B &=~(1<<CS10);
+  b2:	8e b5       	in	r24, 0x2e	; 46
+  b4:	8e 7f       	andi	r24, 0xFE	; 254
+  b6:	8e bd       	out	0x2e, r24	; 46
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:99
+TCCR1B &=~(1<<CS11);
+  b8:	8e b5       	in	r24, 0x2e	; 46
+  ba:	8d 7f       	andi	r24, 0xFD	; 253
+  bc:	8e bd       	out	0x2e, r24	; 46
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:100
+TCCR1B &=~(1<<CS12);
+  be:	8e b5       	in	r24, 0x2e	; 46
+  c0:	8b 7f       	andi	r24, 0xFB	; 251
+  c2:	8e bd       	out	0x2e, r24	; 46
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:101
+}
+  c4:	8f 91       	pop	r24
+  c6:	0f 90       	pop	r0
+  c8:	0f be       	out	0x3f, r0	; 63
+  ca:	0f 90       	pop	r0
+  cc:	1f 90       	pop	r1
+  ce:	18 95       	reti
+
+000000d0 <__vector_1>:
+__vector_1():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:79
+GICR |= (1<<INT0);
+MCUCR |=(1<<ISC01);
+}
+
+ISR(INT0_vect)
+{
+  d0:	1f 92       	push	r1
+  d2:	0f 92       	push	r0
+  d4:	0f b6       	in	r0, 0x3f	; 63
+  d6:	0f 92       	push	r0
+  d8:	11 24       	eor	r1, r1
+  da:	8f 93       	push	r24
+  dc:	ef 93       	push	r30
+  de:	ff 93       	push	r31
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:80
+SREG |=(1<<7);
+  e0:	8f b7       	in	r24, 0x3f	; 63
+  e2:	80 68       	ori	r24, 0x80	; 128
+  e4:	8f bf       	out	0x3f, r24	; 63
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:83
+for (int i = 0 ;i<6;i++)
+{
+  pin[i] =0;
+  e6:	e0 e6       	ldi	r30, 0x60	; 96
+  e8:	f0 e0       	ldi	r31, 0x00	; 0
+  ea:	10 82       	st	Z, r1
+  ec:	11 82       	std	Z+1, r1	; 0x01
+  ee:	12 82       	std	Z+2, r1	; 0x02
+  f0:	13 82       	std	Z+3, r1	; 0x03
+  f2:	14 82       	std	Z+4, r1	; 0x04
+  f4:	15 82       	std	Z+5, r1	; 0x05
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:85
+}
+TCNT1=0;
+  f6:	1d bc       	out	0x2d, r1	; 45
+  f8:	1c bc       	out	0x2c, r1	; 44
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:86
+}
+  fa:	ff 91       	pop	r31
+  fc:	ef 91       	pop	r30
+  fe:	8f 91       	pop	r24
+ 100:	0f 90       	pop	r0
+ 102:	0f be       	out	0x3f, r0	; 63
+ 104:	0f 90       	pop	r0
+ 106:	1f 90       	pop	r1
+ 108:	18 95       	reti
+
+0000010a <__vector_7>:
+__vector_7():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:65
+TIMSK |= (1<<OCIE1A);
+
+}
+
+ISR(TIMER1_COMPA_vect)
+{
+ 10a:	1f 92       	push	r1
+ 10c:	0f 92       	push	r0
+ 10e:	0f b6       	in	r0, 0x3f	; 63
+ 110:	0f 92       	push	r0
+ 112:	11 24       	eor	r1, r1
+ 114:	8f 93       	push	r24
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:66
+SREG |= (1<<7);
+ 116:	8f b7       	in	r24, 0x3f	; 63
+ 118:	80 68       	ori	r24, 0x80	; 128
+ 11a:	8f bf       	out	0x3f, r24	; 63
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:67
+flag =1;
+ 11c:	81 e0       	ldi	r24, 0x01	; 1
+ 11e:	80 93 66 00 	sts	0x0066, r24	; 0x800066 <flag>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:68
+}
+ 122:	8f 91       	pop	r24
+ 124:	0f 90       	pop	r0
+ 126:	0f be       	out	0x3f, r0	; 63
+ 128:	0f 90       	pop	r0
+ 12a:	1f 90       	pop	r1
+ 12c:	18 95       	reti
+
+0000012e <main>:
+main():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:130
+  }
+}
+
+int main()
+{
+    SREG |=(1<<7);
+ 12e:	8f b7       	in	r24, 0x3f	; 63
+ 130:	80 68       	ori	r24, 0x80	; 128
+ 132:	8f bf       	out	0x3f, r24	; 63
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:131
+  DDRC |= 0x0F;  //4 pins in Portc are outputs
+ 134:	84 b3       	in	r24, 0x14	; 20
+ 136:	8f 60       	ori	r24, 0x0F	; 15
+ 138:	84 bb       	out	0x14, r24	; 20
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:132
+  PORTC = 0x00; // initial value of PC0 to show in decoder
+ 13a:	15 ba       	out	0x15, r1	; 21
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:133
+  DDRA |= 0x3F; // first 6 pins in PORTA are outputs
+ 13c:	8a b3       	in	r24, 0x1a	; 26
+ 13e:	8f 63       	ori	r24, 0x3F	; 63
+ 140:	8a bb       	out	0x1a, r24	; 26
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:134
+  PORTA = 0x01; // Show PA0 as initial pin in 7 segment
+ 142:	81 e0       	ldi	r24, 0x01	; 1
+ 144:	8b bb       	out	0x1b, r24	; 27
+INT0_Init():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:72
+flag =1;
+}
+
+void INT0_Init(void)
+{
+DDRD &=~(1<<PD2);
+ 146:	8a 98       	cbi	0x11, 2	; 17
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:73
+PORTD |=(1<<PD2);
+ 148:	92 9a       	sbi	0x12, 2	; 18
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:74
+GICR |= (1<<INT0);
+ 14a:	8b b7       	in	r24, 0x3b	; 59
+ 14c:	80 64       	ori	r24, 0x40	; 64
+ 14e:	8b bf       	out	0x3b, r24	; 59
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:75
+MCUCR |=(1<<ISC01);
+ 150:	85 b7       	in	r24, 0x35	; 53
+ 152:	82 60       	ori	r24, 0x02	; 2
+ 154:	85 bf       	out	0x35, r24	; 53
+INT1_Init():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:90
+TCNT1=0;
+}
+
+void INT1_Init(void)
+{
+  DDRD &=~(1<<PD3); // PD3 input
+ 156:	8b 98       	cbi	0x11, 3	; 17
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:91
+  MCUCR |=(1<<ISC11) |(1<<ISC10); // int1 rising edge
+ 158:	85 b7       	in	r24, 0x35	; 53
+ 15a:	8c 60       	ori	r24, 0x0C	; 12
+ 15c:	85 bf       	out	0x35, r24	; 53
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:92
+  GICR |= (1<<INT1);
+ 15e:	8b b7       	in	r24, 0x3b	; 59
+ 160:	80 68       	ori	r24, 0x80	; 128
+ 162:	8b bf       	out	0x3b, r24	; 59
+INT2_Init():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:105
+TCCR1B &=~(1<<CS12);
+}
+
+void INT2_Init(void)
+{
+  DDRB |= (1<<PB2);
+ 164:	ba 9a       	sbi	0x17, 2	; 23
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:106
+  PORTB |= (1<<PB2);
+ 166:	c2 9a       	sbi	0x18, 2	; 24
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:107
+  MCUCSR &=~ (1<<ISC2);
+ 168:	84 b7       	in	r24, 0x34	; 52
+ 16a:	8f 7b       	andi	r24, 0xBF	; 191
+ 16c:	84 bf       	out	0x34, r24	; 52
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:108
+  GICR |= (1<<INT2);
+ 16e:	8b b7       	in	r24, 0x3b	; 59
+ 170:	80 62       	ori	r24, 0x20	; 32
+ 172:	8b bf       	out	0x3b, r24	; 59
+Timer1():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:56
+
+}
+void Timer1()
+{
+
+TCCR1A |= (1<<FOC1A);
+ 174:	8f b5       	in	r24, 0x2f	; 47
+ 176:	88 60       	ori	r24, 0x08	; 8
+ 178:	8f bd       	out	0x2f, r24	; 47
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:57
+TCCR1B |= (1<<CS12) | (1<<CS10) |(1<<WGM12);
+ 17a:	8e b5       	in	r24, 0x2e	; 46
+ 17c:	8d 60       	ori	r24, 0x0D	; 13
+ 17e:	8e bd       	out	0x2e, r24	; 46
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:58
+TCNT1 = 0;
+ 180:	1d bc       	out	0x2d, r1	; 45
+ 182:	1c bc       	out	0x2c, r1	; 44
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:59
+OCR1A = 1000;
+ 184:	88 ee       	ldi	r24, 0xE8	; 232
+ 186:	93 e0       	ldi	r25, 0x03	; 3
+ 188:	9b bd       	out	0x2b, r25	; 43
+ 18a:	8a bd       	out	0x2a, r24	; 42
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:60
+TIMSK |= (1<<OCIE1A);
+ 18c:	89 b7       	in	r24, 0x39	; 57
+ 18e:	80 61       	ori	r24, 0x10	; 16
+ 190:	89 bf       	out	0x39, r24	; 57
+show():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:122
+
+void show()
+{
+  for (int i =0 ;i<6;i++)
+  {
+    PORTA=(1<<i);
+ 192:	21 e0       	ldi	r18, 0x01	; 1
+ 194:	30 e0       	ldi	r19, 0x00	; 0
+ 196:	e0 e6       	ldi	r30, 0x60	; 96
+ 198:	f0 e0       	ldi	r31, 0x00	; 0
+main():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:120
+}
+
+
+void show()
+{
+  for (int i =0 ;i<6;i++)
+ 19a:	90 e0       	ldi	r25, 0x00	; 0
+ 19c:	80 e0       	ldi	r24, 0x00	; 0
+show():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:122
+  {
+    PORTA=(1<<i);
+ 19e:	a9 01       	movw	r20, r18
+ 1a0:	08 2e       	mov	r0, r24
+ 1a2:	01 c0       	rjmp	.+2      	; 0x1a6 <main+0x78>
+ 1a4:	44 0f       	add	r20, r20
+ 1a6:	0a 94       	dec	r0
+ 1a8:	ea f7       	brpl	.-6      	; 0x1a4 <main+0x76>
+ 1aa:	4b bb       	out	0x1b, r20	; 27
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:123
+    PORTC = pin[i];
+ 1ac:	41 91       	ld	r20, Z+
+ 1ae:	45 bb       	out	0x15, r20	; 21
+_delay_ms():
+c:\users\abdullah reda\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1b0:	a3 ef       	ldi	r26, 0xF3	; 243
+ 1b2:	b1 e0       	ldi	r27, 0x01	; 1
+ 1b4:	11 97       	sbiw	r26, 0x01	; 1
+ 1b6:	f1 f7       	brne	.-4      	; 0x1b4 <main+0x86>
+ 1b8:	00 c0       	rjmp	.+0      	; 0x1ba <main+0x8c>
+ 1ba:	00 00       	nop
+show():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:120
+}
+
+
+void show()
+{
+  for (int i =0 ;i<6;i++)
+ 1bc:	01 96       	adiw	r24, 0x01	; 1
+ 1be:	86 30       	cpi	r24, 0x06	; 6
+ 1c0:	91 05       	cpc	r25, r1
+ 1c2:	69 f7       	brne	.-38     	; 0x19e <main+0x70>
+main():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:143
+  Timer1();
+
+  while (1)
+  {
+      show();
+      if (flag == 1)
+ 1c4:	80 91 66 00 	lds	r24, 0x0066	; 0x800066 <flag>
+ 1c8:	81 30       	cpi	r24, 0x01	; 1
+ 1ca:	29 f7       	brne	.-54     	; 0x196 <main+0x68>
+UPDATE():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:14
+char pin[6];
+unsigned char flag;
+void UPDATE(void)
+{
+
+  pin[0]++;
+ 1cc:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 1d0:	8f 5f       	subi	r24, 0xFF	; 255
+ 1d2:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:16
+
+if (pin[0]==10)
+ 1d6:	8a 30       	cpi	r24, 0x0A	; 10
+ 1d8:	89 f4       	brne	.+34     	; 0x1fc <main+0xce>
+ 1da:	90 91 62 00 	lds	r25, 0x0062	; 0x800062 <__DATA_REGION_ORIGIN__+0x2>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:18
+{
+  pin[1]++;
+ 1de:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
+ 1e2:	8f 5f       	subi	r24, 0xFF	; 255
+ 1e4:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:19
+  pin[0]=0;
+ 1e8:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <__DATA_REGION_ORIGIN__>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:20
+  if(pin[1] == 6)
+ 1ec:	86 30       	cpi	r24, 0x06	; 6
+ 1ee:	31 f4       	brne	.+12     	; 0x1fc <main+0xce>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:22
+  {
+    pin[2]++;
+ 1f0:	81 e0       	ldi	r24, 0x01	; 1
+ 1f2:	89 0f       	add	r24, r25
+ 1f4:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <__DATA_REGION_ORIGIN__+0x2>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:23
+    pin[1] = 0;
+ 1f8:	10 92 61 00 	sts	0x0061, r1	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:27
+  }
+}
+
+if (pin[2] == 10)
+ 1fc:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <__DATA_REGION_ORIGIN__+0x2>
+ 200:	8a 30       	cpi	r24, 0x0A	; 10
+ 202:	89 f4       	brne	.+34     	; 0x226 <main+0xf8>
+ 204:	90 91 64 00 	lds	r25, 0x0064	; 0x800064 <__DATA_REGION_ORIGIN__+0x4>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:29
+{
+  pin[3]++;
+ 208:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <__DATA_REGION_ORIGIN__+0x3>
+ 20c:	8f 5f       	subi	r24, 0xFF	; 255
+ 20e:	80 93 63 00 	sts	0x0063, r24	; 0x800063 <__DATA_REGION_ORIGIN__+0x3>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:30
+  pin[2]=0;
+ 212:	10 92 62 00 	sts	0x0062, r1	; 0x800062 <__DATA_REGION_ORIGIN__+0x2>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:31
+  if (pin[3] == 6)
+ 216:	86 30       	cpi	r24, 0x06	; 6
+ 218:	31 f4       	brne	.+12     	; 0x226 <main+0xf8>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:33
+  {
+    pin[4]++;
+ 21a:	81 e0       	ldi	r24, 0x01	; 1
+ 21c:	89 0f       	add	r24, r25
+ 21e:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__DATA_REGION_ORIGIN__+0x4>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:34
+    pin[3]=0;
+ 222:	10 92 63 00 	sts	0x0063, r1	; 0x800063 <__DATA_REGION_ORIGIN__+0x3>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:37
+  }
+}
+if (pin[4] == 10)
+ 226:	80 91 64 00 	lds	r24, 0x0064	; 0x800064 <__DATA_REGION_ORIGIN__+0x4>
+ 22a:	8a 30       	cpi	r24, 0x0A	; 10
+ 22c:	99 f4       	brne	.+38     	; 0x254 <main+0x126>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:39
+{
+  pin[5]++;
+ 22e:	80 91 65 00 	lds	r24, 0x0065	; 0x800065 <__DATA_REGION_ORIGIN__+0x5>
+ 232:	8f 5f       	subi	r24, 0xFF	; 255
+ 234:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <__DATA_REGION_ORIGIN__+0x5>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:40
+  pin[4]=0;
+ 238:	10 92 64 00 	sts	0x0064, r1	; 0x800064 <__DATA_REGION_ORIGIN__+0x4>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:41
+  if (pin[5] == 6)
+ 23c:	86 30       	cpi	r24, 0x06	; 6
+ 23e:	51 f4       	brne	.+20     	; 0x254 <main+0x126>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:43
+  {
+    pin[0]=0;
+ 240:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <__DATA_REGION_ORIGIN__>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:44
+    pin[1]=0;
+ 244:	10 92 61 00 	sts	0x0061, r1	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:45
+    pin[2]=0;
+ 248:	10 92 62 00 	sts	0x0062, r1	; 0x800062 <__DATA_REGION_ORIGIN__+0x2>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:46
+    pin[3]=0;
+ 24c:	10 92 63 00 	sts	0x0063, r1	; 0x800063 <__DATA_REGION_ORIGIN__+0x3>
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:48
+    pin[4]=0;
+    pin[5]=0;
+ 250:	10 92 65 00 	sts	0x0065, r1	; 0x800065 <__DATA_REGION_ORIGIN__+0x5>
+main():
+C:\Users\ABDULLAH REDA\Documents\Arduino\sketch_apr10a/sketch_apr10a.ino:146
+  {
+      show();
+      if (flag == 1)
+      {
+        UPDATE();
+        flag=0;
+ 254:	10 92 66 00 	sts	0x0066, r1	; 0x800066 <flag>
+ 258:	9e cf       	rjmp	.-196    	; 0x196 <main+0x68>
+
+0000025a <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 25a:	f8 94       	cli
+
+0000025c <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 25c:	ff cf       	rjmp	.-2      	; 0x25c <__stop_program>
